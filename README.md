@@ -1,1 +1,1 @@
-# djangocmsversion
+# kiddify on Django CMS
