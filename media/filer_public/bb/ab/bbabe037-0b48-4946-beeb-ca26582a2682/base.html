@@ -1,0 +1,419 @@
+{% load staticfiles %}
+<html>
+<head>
+   
+
+    <link rel="stylesheet" href="/static/kiddify/style.css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="logoKiddify.png">
+    <title>kiddify.com | it's all about you</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet" type="text/css">
+
+
+
+    <!-- css needed -->
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+
+    <!-- styles for svg gradients -->
+    <style type="text/css">
+        svg#defs, svg#defs defs {font-size: 0; margin: 0; padding: 0; width: 0; height: 0; position: absolute; }
+        .orange svg path{fill:url(#grad-orange)}
+        .blue svg path{fill:url(#grad-blue)}
+        .red svg path{fill:url(#grad-red)}
+        .light-blue svg path{fill:url(#grad-light-blue)}
+        .light-blue .active svg path{fill:url(#grad-blue)}
+        .extra-light-blue svg path{fill:url(#grad-extra-light-blue)}
+        .extra-light-blue .active svg path{fill:url(#grad-blue)}
+    </style><!-- styles for svg gradients -->
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-36356012-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+<svg id="defs" height="0" width="0" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#229aec;stop-opacity:1"></stop>
+            <stop offset="100%" style="stop-color:#08318e;stop-opacity:1"></stop>
+        </linearGradient>
+        <linearGradient id="grad-orange" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#f29b12;stop-opacity:1"></stop>
+            <stop offset="100%" style="stop-color:#d35500;stop-opacity:1"></stop>
+        </linearGradient>
+        <linearGradient id="grad-red" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#e72814;stop-opacity:1"></stop>
+            <stop offset="100%" style="stop-color:#b21100;stop-opacity:1"></stop>
+        </linearGradient>
+        <linearGradient id="grad-light-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#7dc5f7;stop-opacity:1"></stop>
+            <stop offset="100%" style="stop-color:#436dce;stop-opacity:1"></stop>
+        </linearGradient>
+        <linearGradient id="grad-extra-light-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#519dd7;stop-opacity:1"></stop>
+            <stop offset="100%" style="stop-color:#53abe9;stop-opacity:1"></stop>
+        </linearGradient>
+    </defs>
+</svg>
+
+<div id="page" class="lp-page">
+    <header>
+        <div class="container">
+            <div class="row">
+                <a href="/en/" id="logo">
+                    <img src="/static/kiddify/img/logo.png" alt="kiddify.com - cool things we do">
+                </a>
+                <div class="alert-box error"></div> 
+            </div>
+        </div>
+    </header>
+    <section>
+    <div class="container">
+
+    </div>
+</div>
+
+<div class="col-xs-12">
+    {% block content %}
+    {% endblock %}
+</div>
+<div class="box-inspiration box-visual" id="inspire">
+    <div class="container">
+        <!-- heading -->
+        <div class="heading fancy red">
+            <h2>GET INSPIRED</h2>
+        </div>
+        <!-- heading -->
+    </div>
+    <div class="gfx">
+        <img src="http://com-kiddify-images.s3.amazonaws.com/Verion01/gfx-visual-red.png" alt="Inspiration">
+    </div>
+</div>
+<!-- box inspiration -->
+<!-- box explore -->
+<div class="box-explore box-visual" id="explore">
+    <div class="container">
+        <!-- heading -->
+        <div class="heading fancy blue">
+            <div class="content">
+                <svg class="left-edge edge right" preserveAspectRatio="none" viewBox="0 0 100 100" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M103 0 L103 100 L0 100 Z"></path>
+                </svg>
+                <h2>DISCOVER THE WORLD</h2>
+                <svg class="right-edge edge right" preserveAspectRatio="none" viewBox="0 0 100 100" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 100 L-1 0 L100 0 Z"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- heading -->
+    </div>
+    <div class="gfx">
+        <img src="http://com-kiddify-images.s3.amazonaws.com/Verion01/gfx-visual-blue.png" alt="Inspiration">
+    </div>
+</div>
+<!-- box explore -->
+<!-- box how -->
+<div class="box-how" id="about">
+<div class="container"><!-- heading -->
+    <div class="heading fancy orange">
+        <div class="content">
+            <svg class="left-edge edge right" preserveAspectRatio="none" viewBox="0 0 100 100" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M103 0 L103 103 L0 103 Z"></path>
+            </svg>
+            <h2>HOW DOES IT WORK?</h2>
+        </div>
+    </div>
+    <!-- heading -->
+</div>
+<div class="container with-margin-top">
+    <div class="animated-boxes fancy">
+        <!-- animated boxes -->
+        <ul id="animated-boxes" class="sti-menu">
+            <li>
+                <a href="/en/register/" id="register">
+                    <span data-type="icon" class="icon gfx-lock">Anmelden</span>
+
+                    <h2 data-type="mText" class="sti-item">Sign Up</h2>
+
+                    <p data-type="sText" class="sti-item">Come on board. Choose your nickname and avatar.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span data-type="icon" class="icon gfx-idea">Lass dich inspierieren</span>
+
+                    <h2 data-type="mText" class="sti-item">GET INSPIRED</h2>
+
+                    <p data-type="sText" class="sti-item">See what others are doing on KIDDIFY</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span data-type="icon" class="icon gfx-camera">Filmen</span>
+
+                    <h2 data-type="mText" class="sti-item">CREATE</h2>
+
+                    <p data-type="sText" class="sti-item">Create your clip.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span data-type="icon" class="icon gfx-computer">Hochladen</span>
+
+                    <h2 data-type="mText" class="sti-item">UPLOAD</h2>
+
+                    <p data-type="sText" class="sti-item">Upload your video clip to KIDDIFY</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span data-type="icon" class="icon gfx-comment">Freigabe</span>
+
+                    <h2 data-type="mText" class="sti-item">GET APPROVED</h2>
+
+                    <p data-type="sText" class="sti-item">Your video clip will be reviewed by our team.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span data-type="icon" class="icon gfx-paperplane">Teile dein Wissen</span>
+
+                    <h2 data-type="mText" class="sti-item">SHARE YOUR KNOWLEDGE</h2>
+
+                    <p data-type="sText" class="sti-item">Your video clip is on KIDDIFY!</p>
+                </a>
+            </li>
+        </ul>
+        <!-- animated boxes -->
+    </div>
+    <!-- text tabs -->
+    <div class="text-tabs tabs blue">
+        <ul>
+            <li class="active">
+                <svg class="tab-bg" preserveAspectRatio="none" viewBox="0 0 100 100" height="100%" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0 L0 100 L100 100 L100 8 Z"></path>
+                </svg>
+                <a href="#tab-1" data-toggle="tab">ABOUT KIDDIFY</a>
+            </li>
+            <li>
+                <svg class="tab-bg" preserveAspectRatio="none" viewBox="0 0 100 100" height="100%" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0 L0 100 L100 100 L100 8 Z"></path>
+                </svg>
+                <a href="#tab-2" data-toggle="tab">TEAM</a>
+            </li>
+            <li>
+                <svg class="tab-bg" preserveAspectRatio="none" viewBox="0 0 100 100" height="100%" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0 L0 100 L100 100 L100 8 Z"></path>
+                </svg>
+                <a href="#tab-3" data-toggle="tab">VOLUNTEER</a>
+            </li>
+        </ul>
+    </div>
+    <!-- text tabs -->
+    <!-- tabs content -->
+    <div class="tab-content" style="min-height: 526px;">
+        <div class="content tab-pane active" id="tab-1">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h2 class="fancy">SHARING KNOWLEDGE</h2>
+
+                    <p>The definition of KIDDIFY is “to nourish the innate curiosity and creativity that all individuals have when they are born”.</p>
+
+                    <p><strong>KIDDIFY</strong> is a peer-to-peer video platform where children and youth aged 8 through 18 can share their skills and talents with each other around the world by creating their own video tutorials (how-to-videos).</p>
+
+                    <p>Each video is then translated into different languages and categorised into the country of origin and by skill. KIDDIFY users can learn new skills, languages, feel empowered and ultimately learn about each other.</p>
+
+                    <p>Our mandate is to offer children around the world the opportunity to share their skills and talents; to feed their innate curiosity, and support their desire to learn about their peers around the globe. In doing so, we strive to enable them to become empathetic, culturally aware, digitally-able and empowered citizens.</p>
+                </div>
+                <div class="col-xs-6">
+                    <h2 class="fancy">MISSION</h2>
+
+                    <p>We believe that education should be about unfolding one's potential. Individuals learn from experience, looking to others for support and guidance as we build ourselves and, consequently, create our world.   As technology grows, so does our ability to connect.</p>
+
+                    <p><strong>KIDDIFY </strong>provides the stage for development and expansion by uniting the global community. The video platform gives users the opportunity to learn from their peers while building confidence in their talents and skills.</p>
+
+                    <p>When children/youth see what their peers are capable of doing, they often feel inspired and motivated to follow suit. The power of peer-inspiration can be powerfully positive, and this is what<strong> KIDDIFY </strong>seeks to inspire.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content tab-pane" id="tab-2">
+            <div class="row">
+                <h2 class="fancy">TEAM</h2>
+                <!-- team box -->
+                <div class="box-team col-xs-10 col-xs-offset-2">
+                    <ul>
+                        <li>
+                            <a class="persons" rel="popover" data-placement="bottom" data-original-title="Paula Laurel Jackson PhD" data-trigger="click" data-content="A self-professed global nomad, Founder and CEO Paula has lived and worked in several
+                                    countries around the world as a child growing up and as an adult working as an
+                                    educational consultant. She spent the past decade working as a consultant for
+                                    various NGOs, schools and multilateral organisations, such as the World Bank and the
+                                    Commonwealth Secretariat in London. Her mission in life: to find ways of empowering
+                                    children to realise their potential and KIDDIFY is one means towards meeting that
+                                    goal.">
+                                <img src="/static/kiddify/img/gfx-person-1.jpg" alt="Paula Laurel Jackson PhD">
+                            </a>
+
+                            <p>Paula Laurel Jackson PhD</p>
+                        </li>
+                        <li>
+                            <a class="persons" rel="popover" data-placement="bottom" data-original-title="Volker Brümmer" data-trigger="click" data-content="Co-Founder and CFO Volker has worked in the creative industry for more than 20 years.
+                                   In his early career he was CFO and COO of a private Theatre in Germany, responsible for implementing financial and organizational Structures.
+                                   In the following years he served as Founder and CEO of a Theatre and international aboutusion company developing and distributing original content worldwide.
+                                   Volker is Mentor, investor and consultant to creative Artists and Companies bridging the gap between creative processes and financing of projects.
+                                   His focus is to empower creative development combined with the establishment of business models. His passion is to create value through fostering the creative potential of Individuals.
+                                   Volker is father to a 12-year old son and following his passion by providing an important tool to empower children in a globalized environment.">
+                                <img src="/static/kiddify/img/gfx-person-2.jpg" alt="Volker Brümmer">
+                            </a>
+
+                            <p>Volker Brümmer</p>
+                        </li>
+                        <li>
+                            <a class="persons" rel="popover" data-placement="bottom" data-original-title="Christian Schubert" data-trigger="click" data-content="A design and gadget nerd spending a lot of time realizing web and mulitmedia projects of all sizes
+                                   since the mid nineties and did a lot of visual installations in on- and offline media,
+                                   desperately wants to have KIDDIFY for his own three kids to play with and therefore he gives all his abilities into this project.">
+                                <img src="/static/kiddify/img/gfx-person-3.jpg" alt="Christian Schubert">
+                            </a>
+
+                            <p>Christian Schubert</p>
+                        </li>
+                        <li>
+                            <a class="persons" rel="popover" data-placement="bottom" data-original-title="Gesine Heidelmann" data-content="Text folgt in Kürze" data-trigger="click">
+                                <img src="/static/kiddify/img/gfx-person-5.jpg" alt="Gesine Heidelmann">
+                            </a>
+
+
+                            <p>Gesine Heidelmann</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- team box -->
+            </div>
+        </div>
+        <div class="content tab-pane" id="tab-3">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="fancy"> VOLUNTEER</h2>
+
+                    <p>Are you interested to be be a volunteer top support our mission?  Then, we are looking forward to receive an email from you on: <a href="mailto:volunteer@kiddify.com">volunteer@kiddify.com</a></p>
+                    <h4><a href="/en/freiwillige">Current Offers</a></h4>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- tabs content -->
+
+</div>
+</div>
+</section>
+<!-- Kiddify Video Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="fa fa-times-circle" data-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+                                    <div id="mep_6" class="mejs-container svg mejs-video" style="width: 1020px; height: 573px;"><div class="mejs-inner"><div class="mejs-mediaelement"><video id="player1" width="1020" height="573" style="width: 100%; height: 100%;" poster="http://com-kiddify-images.s3.amazonaws.com/landingpage/video/kiddify.png" preload="none" src="http://com-kiddify-videos.s3.amazonaws.com/kiddify-image-720p-english.mp4">
+                        <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+                        <source type="video/mp4" src="http://com-kiddify-videos.s3.amazonaws.com/kiddify-image-720p-english.mp4">
+                        <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
+                        <object width="720" height="400" type="application/x-shockwave-flash" data="flashmediaelement.swf">
+                            <param name="movie" value="flashmediaelement.swf">
+                            <param name="flashvars" value="controls=true&amp;file=http://com-kiddify-images.s3.amazonaws.com/landingpage/video/kiddify.mp4">
+                        </object>
+                    </video></div><div class="mejs-layers"><div class="mejs-poster mejs-layer" style="background-image: url(&quot;http://com-kiddify-images.s3.amazonaws.com/landingpage/video/kiddify.png&quot;); width: 100%; height: 100%;"><img width="100%" height="100%" src="http://com-kiddify-images.s3.amazonaws.com/landingpage/video/kiddify.png"></div><div class="mejs-overlay mejs-layer" style="display: none; width: 100%; height: 100%;"><div class="mejs-overlay-loading"><span></span></div></div><div class="mejs-overlay mejs-layer" style="display: none; width: 100%; height: 100%;"><div class="mejs-overlay-error"></div></div><div class="mejs-overlay mejs-layer mejs-overlay-play" style="width: 100%; height: 543px;"><div class="mejs-overlay-button" style="margin-top: -35px;"></div></div></div><div class="mejs-controls" style="display: block; visibility: hidden;"><div class="mejs-button mejs-playpause-button mejs-play"><button type="button" aria-controls="mep_6" title="Play/Pause" aria-label="Play/Pause"></button></div><div class="mejs-time mejs-currenttime-container"><span class="mejs-currenttime">00:00</span></div><div class="mejs-time-rail" style="width: 100px;"><span class="mejs-time-total" style="width: 90px;"><span class="mejs-time-buffering" style="display: none;"></span><span class="mejs-time-loaded"></span><span class="mejs-time-current"></span><span class="mejs-time-handle"></span><span class="mejs-time-float"><span class="mejs-time-float-current">00:00</span><span class="mejs-time-float-corner"></span></span></span></div><div class="mejs-time mejs-duration-container"><span class="mejs-duration">00:00</span></div><div class="mejs-button mejs-volume-button mejs-mute"><button type="button" aria-controls="mep_6" title="Mute Toggle" aria-label="Mute Toggle"></button><div class="mejs-volume-slider"><div class="mejs-volume-total"></div><div class="mejs-volume-current"></div><div class="mejs-volume-handle"></div></div></div><div class="mejs-button mejs-fullscreen-button"><button type="button" aria-controls="mep_6" title="Fullscreen" aria-label="Fullscreen"></button></div></div><div class="mejs-clear"></div></div></div>
+                            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#register').click(function(){
+            location.href = $(this).attr('href');
+        });
+//        $('.carousel').carousel('pause');
+        $('.persons').popover();
+        $('video').mediaelementplayer({
+            pluginPath: "/bundles/kiddifywebsite/vendor/mediaPlayerBuild/",
+            success: function (media, node, player) {
+
+                var events = ['loadstart', 'play', 'pause', 'ended'];
+                for (var i = 0, il = events.length; i < il; i++) {
+                    var eventName = events[i];
+
+                    media.addEventListener(events[i], function (e) {
+                        player.hideControls();
+
+                    });
+                }
+            },
+            translations: ['es', 'de'],
+            translationSelector: true,
+            startLanguage: 'en'
+        });
+    });
+</script>
+
+    <!-- page footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <ul>
+                        <li><a href="/en/index/mentoring">Become a Mentor</a></li>
+                        <li><a href="/en/index/terms_conditions">Terms &amp; Conditions</a></li>
+                        <li><a href="/en/index/privacy">Privacy</a></li>
+                        <li><a href="/en/index/contactus">Contact Us</a></li>
+                        <li><a href="/en/index/imprint">Imprint</a></li>
+                        <li><a href="/en/index/investors_friends_advisors">Investors, Friends and Advisors</a></li>
+                    </ul>
+                </nav>
+                <p class="copy">© Kiddify GmbH</p>
+                <a id="toTop" href="#page" class="btn-to-the-top"><img src="/static/kiddify/img/to-the-top_button.png"></a>
+            </div>
+        </div>
+    </footer><!-- page footer -->
+</div>
+
+<script>
+    $(function () {
+        var activeTab = $('[href=' + location.hash + ']');
+        activeTab && activeTab.tab('show');
+    });
+    $(document).ready(function(){
+
+        $('#toTop').click(function(){
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        $('#back-btn').click(function(){
+            window.history.go(-1)   ;
+        });
+    });
+</script>
+
+
+</body>
+</html>
