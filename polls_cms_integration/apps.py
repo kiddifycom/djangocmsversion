@@ -4,4 +4,4 @@ from django.apps import AppConfig
 
 
 class KiddifyConfig(AppConfig):
-    name = 'kiddify'
+    name = 'kidVids'

@@ -1,7 +1,13 @@
-
+TEST ING
 {% extends 'kiddify/base.html' %}
+
 {% block content %}
+
+
+NOTE THIS --> {{vidStuff}} <-- Object created using VidInfo.object.create() in the python manage.py shell in terminal; there is a disconnect between VidInfo in the shell and VidInfo > vidStuff in polls_cms_integration; the two are talking (if you change something in polls_cms models.py it will reflect in the django /admin, but the additions through the django cms are not reflected)
+
 {% for info in vidStuff %}
+
 <div class="col-xs-4">
     <div class="video-box video-small border-category-films">
         <div class="title-box category-films landing-video-box">
