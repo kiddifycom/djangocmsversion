@@ -148,7 +148,9 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'kiddify'
+    'kiddify',
+    'polls_cms_integration',
+    'polls',
 )
 
 LANGUAGES = (
