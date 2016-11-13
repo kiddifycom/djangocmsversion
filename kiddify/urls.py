@@ -20,6 +20,7 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns('',
     url(r'^admin/', include(admin.site.urls)),  # NOQA
+    url(r'^accounts/', include('accounts.urls', namespace='accounts')),
     url(r'^', include('cms.urls')),
 )
 
