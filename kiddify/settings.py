@@ -148,7 +148,7 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'accounts',
+    'existing_login',
     'kiddify',
 )
 

@@ -4,7 +4,7 @@ urlpatterns = patterns('',
         r'^$',
         'django.contrib.auth.views.login',
         name='login',
-        kwargs={'template_name': 'accounts/login.html'}
+        kwargs={'template_name': 'existing_login/login.html'}
     ),
     url(
         r'^logout/$',
