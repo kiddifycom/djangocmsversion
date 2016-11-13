@@ -86,11 +86,11 @@
     </header>
     <section>
     <div class="container">
-{% if user.is_authenticated %}
-    <p>Welcome, {{ user.username }}!  <a href="{% url 'accounts:logout' %}">logout</a></p>
-{% else %}
-    <p>Welcome, to kiddify! If you are an existing member, <a href="{% url 'accounts:login' %}">login here!</a></p>
-{% endif %}
+        {% if user.is_authenticated %}
+            <p>Welcome back, {{ user.username }}!  <a href="{% url 'accounts:logout' %}">logout</a></p>
+        {% else %}
+            <p>Welcome, to kiddify! If you are an existing member, <a href="{% url 'accounts:login' %}">login here!</a></p>
+        {% endif %}
     </div>
 </div>
 
