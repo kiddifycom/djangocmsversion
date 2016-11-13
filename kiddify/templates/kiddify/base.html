@@ -46,6 +46,8 @@
 </head>
 
 <body>
+
+
 <svg id="defs" height="0" width="0" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <linearGradient id="grad-blue" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -84,7 +86,11 @@
     </header>
     <section>
     <div class="container">
-
+{% if user.is_authenticated %}
+    <p>Welcome, {{ user.username }}!  <a href="{% url 'accounts:logout' %}">logout</a></p>
+{% else %}
+    <p>Welcome, to kiddify! If you are an existing member, <a href="{% url 'accounts:login' %}">login here!</a></p>
+{% endif %}
     </div>
 </div>
 
