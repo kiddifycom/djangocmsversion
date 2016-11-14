@@ -1,3 +1,6 @@
+$(document).ready(function() {
+
+
 function draw(e, t) {
     var n, i, s = [],
         o = e.parentNode.querySelector("svg");
@@ -8567,7 +8570,7 @@ mejs.version = "2.13.2", mejs.meIndex = 0, mejs.plugins = {
         enablePluginDebug: !1,
         httpsBasicAuthSite: !1,
         type: "",
-        pluginPath: mejs.Utility.getScriptPath(["mediaelement.js", "mediaelement.min.js", "mediaelement-and-player.js", "mediaelement-and-player.min.js"]),
+        pluginPath: mejs.Utility.getScriptPath(["/static/kiddify/js/mediaelement.js", "/static/kiddify/js/mediaelement.min.js", "/static/kiddify/js/mediaelement-and-player.js", "/static/kiddify/js/mediaelement-and-player.min.js"]),
         flashName: "flashmediaelement.swf",
         flashStreamer: "",
         enablePluginSmoothing: !1,
@@ -9000,6 +9003,7 @@ mejs.version = "2.13.2", mejs.meIndex = 0, mejs.plugins = {
                     mejs.MediaElement(t.$media[0], i), "undefined" != typeof t.container && t.controlsAreVisible && t.container.trigger("controlsshown")
                 },
                 showControls: function(e) {
+                    console.log('show controls line 9006!');
                     var t = this;
                     e = "undefined" == typeof e || e, t.controlsAreVisible || (e ? (t.controls.css("visibility", "visible").stop(!0, !0).fadeIn(200, function() {
                         t.controlsAreVisible = !0, t.container.trigger("controlsshown")
@@ -9950,3 +9954,4 @@ mejs.version = "2.13.2", mejs.meIndex = 0, mejs.plugins = {
             }
         })
     }(mejs.$);
+})

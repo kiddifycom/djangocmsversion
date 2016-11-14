@@ -1,19 +1,22 @@
-{% extends 'kiddify/base.html' %}
+{% extends '/kiddify/base.html' %}
 
 {% block content %}
 
 {% for info in vidStuff %}
 
 <div class="col-xs-4">
-    <div class="video-box video-small border-category-films">
+
+    
+    <div id="exp_{{value|length}}" class="video-box video-small border-category-films">
         <div class="title-box category-films landing-video-box">
             <img class="avatar" alt="Avatar" src="{{info.avatar_img}}">
 
             <p class="title">{{info.title}}</p>
+
             <img class="country" src="{{info.country_flag}}">
         </div>
         <div class="video-content">
-            <div id="mep_0" class="mejs-container svg video mejs-video" style="width: 290px; height: 164px;">
+            <div class="mejs-container svg video mejs-video" style="width: 290px; height: 164px;">
             	<div class="mejs-inner">
             		<div class="mejs-mediaelement">
             			<video class="video" width="290" height="164" poster="{{info.vid_poster}}" src="{{info.vid_src}}">
@@ -47,7 +50,35 @@
         		<div class="mejs-button mejs-playpause-button mejs-play"><button type="button" aria-controls="mep_0" title="Play/Pause" aria-label="Play/Pause"></button></div><div class="mejs-time mejs-currenttime-container"><span class="mejs-currenttime">00:00</span></div><div class="mejs-time-rail" style="width: 115px;"><span class="mejs-time-total" style="width: 105px;"><span class="mejs-time-buffering" style="display: none;"></span><span class="mejs-time-loaded" style="width: 16.6151px;"></span><span class="mejs-time-current" style="width: 0px;"></span><span class="mejs-time-handle" style="left: -5px;"></span><span class="mejs-time-float" style="display: none; left: 76.4688px;"><span class="mejs-time-float-current">00:58</span><span class="mejs-time-float-corner"></span></span></span></div><div class="mejs-time mejs-duration-container"><span class="mejs-duration">01:28</span></div><div class="mejs-button mejs-captions-button mejs-captions-enabled"><button type="button" aria-controls="mep_0" title="Captions/Subtitles" aria-label="Captions/Subtitles"></button><div class="mejs-captions-selector" style="height: 160px;"><ul><li><input type="radio" name="mep_0_captions" id="mep_0_captions_none" value="none" checked="checked"><label for="mep_0_captions_none">None</label></li><li><input type="radio" name="mep_0_captions" id="mep_0_captions_en" value="en"><label for="mep_0_captions_en">English</label></li><li><input type="radio" name="mep_0_captions" id="mep_0_captions_es" value="es"><label for="mep_0_captions_es">Spanish</label></li></ul></div></div><div class="mejs-button mejs-volume-button mejs-mute"><button type="button" aria-controls="mep_0" title="Mute Toggle" aria-label="Mute Toggle"></button><div class="mejs-volume-slider" style="display: none;"><div class="mejs-volume-total"></div><div class="mejs-volume-current" style="height: 80px; top: 28px;"></div><div class="mejs-volume-handle" style="top: 25px;"></div></div></div><div class="mejs-button mejs-fullscreen-button"><button type="button" aria-controls="mep_0" title="Fullscreen" aria-label="Fullscreen"></button></div></div><div class="mejs-clear"></div></div></div>
         </div>
     </div>
-    
 </div>
+<script>
+    console.log('experiment');
+   // console.log(this);
+
+    $(document).ready(function() {
+        var allVids = document.getElementsByClassName('col-xs-4');
+        var allControls = document.getElementsByClassName('mejs-controls');
+       // console.log(allControls);
+        var len = allVids.length;
+        for(var i=0; i<len; i++){
+          //  console.log(allVids[i]);
+          //  var each = '#exp_'+ [i];
+           // console.log(each);
+           $(allVids[i]).click(function(){
+                var thisControls = $(this).find(allControls);
+                console.log(thisControls[1].style.visibility); 
+
+                thisControls[1].style.visibility = "visible";
+               // console.log($(this).find(allControls));
+             //   thisControls[0].style.visibility = "visible";
+             //   console.log(allVids[i].children());
+               // console.log(this.children());
+
+           })
+        }
+        
+    });
+</script>
+
 {% endfor %}
 {% endblock %}
