@@ -58,15 +58,16 @@
     $(document).ready(function() {
         var allVids = document.getElementsByClassName('col-xs-4');
         var allControls = document.getElementsByClassName('mejs-controls');
+        var allPlay = document.getElementsByClassName('mejs-overlay-button');
        // console.log(allControls);
         var len = allVids.length;
         for(var i=0; i<len; i++){
           //  console.log(allVids[i]);
           //  var each = '#exp_'+ [i];
            // console.log(each);
-           $(allVids[i]).click(function(){
+           $(allVids[i]).mouseover(function(){
                 var thisControls = $(this).find(allControls);
-                console.log(thisControls[1].style.visibility); 
+              //  console.log(thisControls[1].style.visibility); 
 
                 thisControls[1].style.visibility = "visible";
                // console.log($(this).find(allControls));
@@ -74,7 +75,21 @@
              //   console.log(allVids[i].children());
                // console.log(this.children());
 
-           })
+           });
+
+           $(allVids[i]).mouseout(function() {
+                var thisControls = $(this).find(allControls);
+                thisControls[1].style.visibility = "hidden";
+           });
+
+           $(allPlay[i]).click(function() {
+                var playThis = $(this).find(allPlay);
+           
+                    console.log('play the video now');
+                
+                
+                
+           });
         }
         
     });
