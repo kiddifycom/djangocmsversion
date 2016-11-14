@@ -3,7 +3,7 @@ from . import views
 urlpatterns = patterns('',
     url(
         r'^$',
-        views.registration,
-        name='registration'
+        views.register,
+        name='register'
     ),
 )

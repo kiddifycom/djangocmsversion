@@ -1,5 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
-def registration(request):
+def register(request):
     return render(request, 'new_user/registration.html')
