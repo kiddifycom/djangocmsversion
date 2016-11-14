@@ -12383,27 +12383,27 @@ p {
     overflow: hidden;
 }
 
-#page > header {
+header {
     margin-bottom: 28px;
 }
 
-#page > header #logo {
+header #logo {
     margin-top: 17px;
     float: left;
 }
 
-#page > header .alert-box {
+header .alert-box {
     float: left;
     margin-top: 30px;
     margin-left: 45px;
 }
 
-#page > header .main-menu {
+header .main-menu {
     float: right;
     margin: 30px -15px 0 10px;
 }
 
-#page > footer {
+footer {
     margin-top: 41px;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #038fee), color-stop(100%, #08328f));
     background: -webkit-linear-gradient(#038fee 0%, #08328f 100%);
@@ -12418,38 +12418,38 @@ p {
     padding: 15px 0 10px;
 }
 
-#page > footer .container {
+footer .container {
     position: relative;
 }
 
-#page > footer nav {
+footer nav {
     float: left;
 }
 
-#page > footer nav ul {
+footer nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#page > footer nav ul:before, #page > footer nav ul:after {
+footer nav ul:before, footer nav ul:after {
     content: " ";
     display: table;
 }
 
-#page > footer nav ul:after {
+footer nav ul:after {
     clear: both;
 }
 
-#page > footer nav ul > li {
+footer nav ul > li {
     display: block;
 }
 
-#page > footer nav ul li {
+footer nav ul li {
     float: left;
 }
 
-#page > footer nav ul li:before {
+footer nav ul li:before {
     content: "";
     display: inline-block;
     width: 1px;
@@ -12460,20 +12460,20 @@ p {
     top: 2px;
 }
 
-#page > footer nav ul li:first-child:before {
+footer nav ul li:first-child:before {
     display: none;
 }
 
-#page > footer nav ul li a {
+footer nav ul li a {
     font-weight: normal;
     text-decoration: none;
 }
 
-#page > footer p.copy {
+footer p.copy {
     float: right;
 }
 
-#page > footer a.btn-to-the-top {
+footer a.btn-to-the-top {
     display: block;
     width: 73px;
     height: 40px;
@@ -15360,45 +15360,45 @@ label > .ez-radio {
 }
 
 /* Landing Page */
-#page.lp-page .container {
+.lp-page .container {
     width: 960px !important;
 }
 
-#page.lp-page > header .main-menu {
+.lp-page > header .main-menu {
     margin-right: -9px;
 }
 
-#page.lp-page > header .main-menu .icon-idea-large {
+.lp-page > header .main-menu .icon-idea-large {
     margin: 3px 8px 0 7px;
 }
 
-#page.lp-page > header .main-menu .icon-glasses-large {
+.lp-page > header .main-menu .icon-glasses-large {
     margin: 3px 6px 0 0;
 }
 
-#page.lp-page > header .main-menu .login {
+.lp-page > header .main-menu .login {
     margin-right: 17px;
 }
 
-#page.lp-page > header .main-menu .icon-language.not-highlight {
+.lp-page > header .main-menu .icon-language.not-highlight {
     margin-right: 7px;
 }
 
-#page.lp-page > footer a.btn-to-the-top {
+.lp-page > footer a.btn-to-the-top {
     right: 10px;
 }
 
-#page.lp-page .slider .video-box.video-small {
+.lp-page .slider .video-box.video-small {
     margin: 23px 0 -2px;
 }
 
-#page.lp-page .box-visual .gfx {
+.lp-page .box-visual .gfx {
     z-index: 100;
     position: relative;
     margin: 0 auto;
 }
 
-#page.lp-page .box-visual .gfx img {
+.lp-page .box-visual .gfx img {
     display: block;
     position: absolute;
     top: 0;
@@ -15406,20 +15406,20 @@ label > .ez-radio {
     margin-left: -797px;
 }
 
-#page.lp-page .heading {
+.lp-page .heading {
     position: relative;
 }
 
-#page.lp-page .heading h2 {
+.lp-page .heading h2 {
     font-size: 25px;
     color: #f1ece3;
 }
 
-#page.lp-page .heading.red {
+.lp-page .heading.red {
     background: #e72814;
 }
 
-#page.lp-page .heading.red:after {
+.lp-page .heading.red:after {
     content: "";
     display: block;
     width: 380px;
@@ -15430,15 +15430,15 @@ label > .ez-radio {
     right: 0;
 }
 
-#page.lp-page .heading.blue {
+.lp-page .heading.blue {
     background: #0562c0;
 }
 
-#page.lp-page .box-inspiration {
+.lp-page .box-inspiration {
     margin-top: 35px;
 }
 
-#page.lp-page .box-inspiration .heading {
+.lp-page .box-inspiration .heading {
     float: right;
     padding: 12px 45px 19px 60px;
     margin-bottom: -57px;

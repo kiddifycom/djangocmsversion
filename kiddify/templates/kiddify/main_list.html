@@ -1,7 +1,9 @@
-
 {% extends 'kiddify/base.html' %}
+
 {% block content %}
+
 {% for info in vidStuff %}
+
 <div class="col-xs-4">
     <div class="video-box video-small border-category-films">
         <div class="title-box category-films landing-video-box">
@@ -16,8 +18,9 @@
             		<div class="mejs-mediaelement">
             			<video class="video" width="290" height="164" poster="{{info.vid_poster}}" src="{{info.vid_src}}">
                 			<source type="video/mp4" src="{{info.src_type}}">
-                			<track kind="subtitles" src="{{info.track_kind_first}}" srclang="en">
-                			<track kind="subtitles" src="{{info.track_kind_second}}" srclang="es">
+                                <!--take this out for now until we get it all figured out where it comes from and where it should live-->
+                			<!--<track kind="subtitles" src="{{info.track_kind_first}}" srclang="en">
+                			<track kind="subtitles" src="{{info.track_kind_second}}" srclang="es">-->
             			</video>
         			</div>
         			<div class="mejs-layers">
@@ -44,7 +47,7 @@
         		<div class="mejs-button mejs-playpause-button mejs-play"><button type="button" aria-controls="mep_0" title="Play/Pause" aria-label="Play/Pause"></button></div><div class="mejs-time mejs-currenttime-container"><span class="mejs-currenttime">00:00</span></div><div class="mejs-time-rail" style="width: 115px;"><span class="mejs-time-total" style="width: 105px;"><span class="mejs-time-buffering" style="display: none;"></span><span class="mejs-time-loaded" style="width: 16.6151px;"></span><span class="mejs-time-current" style="width: 0px;"></span><span class="mejs-time-handle" style="left: -5px;"></span><span class="mejs-time-float" style="display: none; left: 76.4688px;"><span class="mejs-time-float-current">00:58</span><span class="mejs-time-float-corner"></span></span></span></div><div class="mejs-time mejs-duration-container"><span class="mejs-duration">01:28</span></div><div class="mejs-button mejs-captions-button mejs-captions-enabled"><button type="button" aria-controls="mep_0" title="Captions/Subtitles" aria-label="Captions/Subtitles"></button><div class="mejs-captions-selector" style="height: 160px;"><ul><li><input type="radio" name="mep_0_captions" id="mep_0_captions_none" value="none" checked="checked"><label for="mep_0_captions_none">None</label></li><li><input type="radio" name="mep_0_captions" id="mep_0_captions_en" value="en"><label for="mep_0_captions_en">English</label></li><li><input type="radio" name="mep_0_captions" id="mep_0_captions_es" value="es"><label for="mep_0_captions_es">Spanish</label></li></ul></div></div><div class="mejs-button mejs-volume-button mejs-mute"><button type="button" aria-controls="mep_0" title="Mute Toggle" aria-label="Mute Toggle"></button><div class="mejs-volume-slider" style="display: none;"><div class="mejs-volume-total"></div><div class="mejs-volume-current" style="height: 80px; top: 28px;"></div><div class="mejs-volume-handle" style="top: 25px;"></div></div></div><div class="mejs-button mejs-fullscreen-button"><button type="button" aria-controls="mep_0" title="Fullscreen" aria-label="Fullscreen"></button></div></div><div class="mejs-clear"></div></div></div>
         </div>
     </div>
-
+    
 </div>
 {% endfor %}
 {% endblock %}
